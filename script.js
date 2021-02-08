@@ -19,8 +19,8 @@ inquirer
     }])
     .then(async output => {
         await instagram.initialize()
-        username = output.user || 'ashly_1954'
-        password = output.pass || 'open@backend'
+        username = output.user
+        password = output.pass
         await instagram.login(username, password);
         option()
     })
